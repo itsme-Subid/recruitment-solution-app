@@ -1,6 +1,14 @@
 export type User = {
-  id: number;
   name: string;
-  email: string;
-  image: string;
+  role:
+    | "Backend Developer"
+    | "Frontend Developer"
+    | "Fullstack Developer"
+    | "Designer"
+    | "Project Manager"
+    | "Tester"
+    | "Mobile Developer"
+    | "DevOps"
+    | "Marketing";
+  country: string;
 };

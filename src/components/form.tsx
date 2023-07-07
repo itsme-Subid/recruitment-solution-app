@@ -17,13 +17,13 @@ const Form = () => {
             className="google cursor-pointer flex gap-3 text-sm items-center bg-white px-5 py-2 rounded-xl"
           >
             <img src="/icon/google.svg" alt="google" className="w-5" />
-            <span className="text-secondary font-montserrat">
+            <span className="text-black/40 font-montserrat">
               Sign in with Google
             </span>
           </div>
           <div className="apple cursor-pointer flex gap-3 text-sm items-center bg-white px-5 py-2 rounded-xl">
             <img src="/icon/apple.svg" alt="google" className="w-5" />
-            <span className="text-secondary font-montserrat">
+            <span className="text-black/40 font-montserrat">
               Sign in with Apple
             </span>
           </div>

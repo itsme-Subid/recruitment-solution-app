@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+import { useToast } from "./ui/use-toast";
 
 const tabs = [
   {
@@ -28,36 +29,63 @@ const tabs = [
   },
 ];
 
-const Sidebar = () => (
-  <div className="basis-1/4 sticky top-0 min-w-fit p-8 w-full h-screen">
-    <div className="sidebar-container rounded-[1.875rem] bg-black w-full h-full text-white flex flex-col py-14 px-10 font-montserrat justify-center gap-4">
-      <h1 className="text-3xl font-bold">Board.</h1>
-      <ul className="flex-1 flex flex-col">
-        {tabs.map((tab) => (
-          <li
-            className="flex items-center my-4 gap-4 cursor-pointer"
-            key={tab.title}
-          >
-            <img src={tab.icon} alt={tab.title} className="w-5 h-5" />
-            <span
-              className={twMerge(
-                "text-sm tracking-wider font-medium",
-                tab.active ? "text-white font-bold" : "text-gray-400"
-              )}
+const Sidebar = () => {
+  const { toast } = useToast();
+  return (
+    <div className="basis-1/4 sticky top-0 min-w-fit p-8 w-full h-screen">
+      <div className="sidebar-container rounded-[1.875rem] bg-black w-full h-full text-white flex flex-col py-14 px-10 font-montserrat justify-center gap-4">
+        <h1 className="text-3xl font-bold">Board.</h1>
+        <ul className="flex-1 flex flex-col">
+          {tabs.map((tab, index) => (
+            <li
+              className="flex items-center my-4 gap-4 cursor-pointer"
+              key={tab.title}
+              onClick={() => {
+                if (index) {
+                  toast({
+                    title: "Coming Soon",
+                    description: "This feature is coming soon",
+                  });
+                }
+              }}
             >
-              {tab.title}
-            </span>
+              <img src={tab.icon} alt={tab.title} className="w-5 h-5" />
+              <span
+                className={twMerge(
+                  "text-sm tracking-wider font-medium",
+                  tab.active ? "text-white font-bold" : "text-gray-400"
+                )}
+              >
+                {tab.title}
+              </span>
+            </li>
+          ))}
+          <li
+            onClick={() =>
+              toast({
+                title: "Coming Soon",
+                description: "This feature is coming soon",
+              })
+            }
+            className="mt-auto font-montserrat font-sm text-gray-400 cursor-pointer"
+          >
+            Help
           </li>
-        ))}
-        <li className="mt-auto font-montserrat font-sm text-gray-400 cursor-pointer">
-          Help
-        </li>
-        <li className="font-montserrat font-sm text-gray-400 cursor-pointer">
-          Contact Us
-        </li>
-      </ul>
+          <li
+            onClick={() =>
+              toast({
+                title: "Coming Soon",
+                description: "This feature is coming soon",
+              })
+            }
+            className="font-montserrat font-sm text-gray-400 cursor-pointer"
+          >
+            Contact Us
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Sidebar;

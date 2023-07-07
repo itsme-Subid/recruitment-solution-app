@@ -1,0 +1,38 @@
+[
+  {
+    "id": "frontend-developer",
+    "name": "Frontend Developer"
+  },
+  {
+    "id": "backend-developer",
+    "name": "Backend Developer"
+  },
+  {
+    "id": "fullstack-developer",
+    "name": "Fullstack Developer"
+  },
+  {
+    "id": "mobile-developer",
+    "name": "Mobile Developer"
+  },
+  {
+    "id": "marketing",
+    "name": "Marketing"
+  },
+  {
+    "id": "designer",
+    "name": "Designer"
+  },
+  {
+    "id": "product-manager",
+    "name": "Product Manager"
+  },
+  {
+    "id": "tester",
+    "name": "Tester"
+  },
+  {
+    "id": "devops",
+    "name": "DevOps"
+  }
+]
