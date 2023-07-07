@@ -1,6 +1,6 @@
-import Form from "../components/signinForm";
+import Form from "../components/registerForm";
 
-const Home = () => {
+const Register = () => {
   return (
     <div className="flex h-screen items-center justify-center">
       <Brand />
@@ -9,7 +9,7 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Register;
 
 const Brand = () => (
   <div className="brand basis-1/3 bg-black w-full h-full text-white flex items-center font-montserrat text-7xl font-bold justify-center">

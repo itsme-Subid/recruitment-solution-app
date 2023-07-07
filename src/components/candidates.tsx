@@ -159,7 +159,11 @@ const Header = ({
         >
           <img
             className="rounded-full w-10"
-            src={img ? img : "/img/profile.jpg"}
+            src={
+              img
+                ? img
+                : "https://avatars.dicebear.com/api/avataaars/developer.svg"
+            }
             alt=""
           />
         </div>

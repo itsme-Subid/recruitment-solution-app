@@ -5,10 +5,10 @@ const Home = () => {
     <div className="container-custom-md flex flex-col gap-8 py-20 min-h-screen items-center justify-center">
       <div className="welcome min-h-[60vh] flex flex-col justify-center gap-4">
         <h1 className="font-montserrat text-6xl font-bold text-center">
-          Welcome to <span className="text-primary">TalentFD</span>
+          Welcome to <span className="text-primary">Board</span>
         </h1>
         <p className="font-thin text-center">
-          TalentFD is a platform that helps companies manage their candidates
+          Board is a platform that helps companies manage their candidates
           easily.
         </p>
         <p className="font-thin text-center">
