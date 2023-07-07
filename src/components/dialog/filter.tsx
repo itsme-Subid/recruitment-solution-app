@@ -1,9 +1,7 @@
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -122,7 +120,6 @@ const Filter = () => {
                     key={country.id}
                   >
                     <Checkbox
-                      label={country.name}
                       id={country.id}
                       onCheckedChange={() => handleCountryFilter(country.name)}
                       checked={activeFilters?.countries?.includes(country.name)}
@@ -148,7 +145,6 @@ const Filter = () => {
                     key={role.id}
                   >
                     <Checkbox
-                      label={role.name}
                       id={role.id}
                       onCheckedChange={() => handleRoleFilter(role.name)}
                       checked={activeFilters?.roles?.includes(role.name)}
