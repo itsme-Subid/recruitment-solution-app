@@ -42,6 +42,7 @@ const Home = () => {
         <span className="font-bold">Note:</span> This is a demo project. You can
         sign up with any email and password. You can also sign in with Google.
       </p>
+      <img src="/img/preview_filter.webp" alt="" />
       <img src="/img/preview_signin.webp" alt="" />
     </div>
   );
